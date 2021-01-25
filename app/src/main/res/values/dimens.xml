@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="font_18">18sp</dimen>
+</resources>

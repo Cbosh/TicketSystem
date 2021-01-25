@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginStart="@dimen/margin_10"
+    android:layout_marginEnd="@dimen/margin_10"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentFragment">
+
+        <TextView
+            android:id="@+id/txt_original_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="@string/original_amount" />
+
+        <EditText
+            android:id="@+id/edt_original_amount"
+            android:layout_width="match_parent"
+            android:inputType="numberDecimal"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_original_amount"/>
+
+        <TextView
+            android:id="@+id/txt_payment_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_original_amount"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="@string/payment_amount"/>
+
+        <EditText
+            android:id="@+id/edt_payment_amount"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_payment_amount"/>
+
+    <TextView
+        android:id="@+id/txt_left_over_amount_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/left_over_amount"
+        android:layout_below="@+id/edt_payment_amount"
+        android:layout_marginTop="@dimen/margin_10"/>
+
+        <TextView
+            android:id="@+id/txt_left_over_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dash_dash"
+            android:layout_below="@+id/txt_left_over_amount_label"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_18"/>
+
+        <Button
+            android:id="@+id/btn_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:text="@string/pay"
+            android:textColor="@color/white" />
+
+</RelativeLayout>

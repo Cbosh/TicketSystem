@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TicketSystem</string>
+    <string name="pay">Pay</string>
+    <string name="payment_amount">Payment amount</string>
+    <string name="original_amount">Original amount</string>
+    <string name="left_over_amount">Left over amount</string>
+    <string name="dash_dash">---</string>
+    <string name="country">ZA</string>
+    <string name="language">en</string>
+</resources>
