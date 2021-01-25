@@ -43,10 +43,14 @@ class PaymentFragment : Fragment() {
     override fun onResume() {
         super.onResume()
         btnPay.setOnClickListener {
-            txtLeftOverAmount.text = (calculateLeftOverAmount(
-                edtOriginalPrice.text.toString().toDouble(),
-                edtPaymentPrice.text.toString().toDouble()
-            ))
+            val originalPrice : String =  edtOriginalPrice.text.toString()
+            val paymentPrice : String =  edtPaymentPrice.text.toString()
+            if(originalPrice.isNotEmpty() && paymentPrice.isNotEmpty()){
+                txtLeftOverAmount.text = (calculateLeftOverAmount(
+                    originalPrice.toDouble(),
+                    paymentPrice.toDouble()
+                ))
+            }
         }
     }
 
